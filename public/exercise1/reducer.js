@@ -6,10 +6,8 @@ let initialState = {
 //     state object
 const reducer = (state = initialState, action) => {
 	if (action.type == "INCREMENT") {
-		//state.counterValue++;
-		return {
-			counterValue: state.counterValue + 1
-		}
+		state.counterValue++;
+		return state;
 	} else {
 		return state;
 	}
